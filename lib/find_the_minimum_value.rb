@@ -5,10 +5,12 @@ def find_min_value(array)
    inspector += array[j]  #Inspector needs to be larger than the sum of the array elements
   }
   
- array.length.times do |i|
+ array.length.times {|i|
    if array[i] < inspector
      inspector = array[i]
    end
- end
+ }
  inspector
 end
+
+
