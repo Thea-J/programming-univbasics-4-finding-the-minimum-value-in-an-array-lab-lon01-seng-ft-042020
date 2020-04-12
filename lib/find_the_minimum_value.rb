@@ -1,7 +1,7 @@
 def find_min_value(array)
-   inspector = -1
+   inspector = 0
  array.length.times do |i|
-   if array[i] > inspector
+   if array[i] < inspector
      inspector = array[i]
    end
  end
