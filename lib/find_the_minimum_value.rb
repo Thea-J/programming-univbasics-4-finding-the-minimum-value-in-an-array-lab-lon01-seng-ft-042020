@@ -1,12 +1,13 @@
 def find_min_value(array)
-    array.length.times {|j|
-      sum += array[j]
-    }
+   inspector = 0
+   
+  
+
    
  array.length.times do |i|
-   if array[i] < sum
-     sum = array[i]
+   if array[i] < inspector
+     inspector = array[i]
    end
  end
- sum
+ inspector
 end
